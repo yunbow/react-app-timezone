@@ -1,0 +1,44 @@
+.clocksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.clock {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--color-muted);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--color-primary);
+}
+
+.city {
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.time {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--color-muted-foreground);
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .clocksContainer {
+    flex-direction: column;
+  }
+
+  .clock {
+    margin-bottom: 1rem;
+  }
+}
